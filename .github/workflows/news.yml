@@ -19,12 +19,6 @@ jobs:
     # 서버 실행공간 - 깃허브의 우분투 환경 사용 : 필요한 라이브러리 설치 필요함.
     runs-on: ubuntu-latest
 
-    # 버전별 실행을 설정하는 공간 : 주석 또는 삭제, 필요없음.
-    # strategy:
-    #   fail-fast: false
-    #   matrix:
-    #     python-version: ["3.9", "3.10", "3.11"]
-
     # steps별 실행단계
     steps:
     - uses: actions/checkout@v4
@@ -45,16 +39,6 @@ jobs:
         pip install pandas
         pip install lxml
         
-        # 모두 주석 또는 삭제 : 필요없음.
-    #     python -m pip install flake8 pytest
-    #     if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
-    # - name: Lint with flake8
-    #   run: |
-    #     # stop the build if there are Python syntax errors or undefined names
-    #     flake8 . --count --select=E9,F63,F7,F82 --show-source --statistics
-    #     # exit-zero treats all errors as warnings. The GitHub editor is 127 chars wide
-    #     flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
-
     # 내가 만든 파이썬 파일 실행
     - name: run my file
       run: |
