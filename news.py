@@ -17,3 +17,4 @@ for th_data in th_datas:
 dic = {"증권제목":th_list} 
 df = pd.DataFrame(dic)
 df.to_csv("data.csv",encoding="utf-8",index=False) 
+
