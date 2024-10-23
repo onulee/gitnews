@@ -55,7 +55,7 @@ jobs:
 
     # push 작업진행
     - name : Push
-      uses : ad-m/github-push-action@main
+      uses : ad-m/github-push-action@master
       with :
-        branch : "main"
+        branch : "master"
         github_token : $
