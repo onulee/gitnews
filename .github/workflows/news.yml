@@ -18,7 +18,10 @@ jobs:
 
     # 서버 실행공간 - 깃허브의 우분투 환경 사용 : 필요한 라이브러리 설치 필요함.
     runs-on: ubuntu-latest
-
+    
+    permissions:
+      contents: write
+      
     # steps별 실행단계
     steps:
     - uses: actions/checkout@v4
