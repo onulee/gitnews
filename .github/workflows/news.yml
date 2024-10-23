@@ -10,14 +10,14 @@ on:
   # 특정시간이 될때마다 실행하는 명령어 입력
   # cron표현식 사용
   # 참조사이트 : https://crontab.guru/
-  # schedule :
-  #  - cron : "10 * * * *"
+  schedule :
+   - cron : "10 * * * *"
   
   
-  push:
-    branches: [ "main" ]
-  pull_request:
-    branches: [ "main" ]
+  # push:
+  #   branches: [ "main" ]
+  # pull_request:
+  #   branches: [ "main" ]
 
 # 파일을 실행하는 공간
 jobs:
