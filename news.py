@@ -14,7 +14,7 @@ data = soup.select_one('#contentarea > div.box_type_l > table')
 stocks = data.select("tr")
 
 # 1.상단타이틀. csv파일로 저장
-f = open('stock.csv','w',encoding='utf-8-sig',newline="")
+f = open('data.csv','w',encoding='utf-8-sig',newline="")
 writer = csv.writer(f)
 st_list = [ st.text  for st in stocks[0].select("th") ]
 writer.writerow(st_list)
