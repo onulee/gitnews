@@ -45,7 +45,7 @@ jobs:
         python3 news.py
 
     # 커밋
-    - name : commits
+    - name : Commits
       run : |
         git config --global user.email "onulee@naver.com"
         git config --global user.name "lee"
@@ -54,8 +54,8 @@ jobs:
         git commit -m "뉴스데이터 수집"
 
     # push 작업진행
-    - name : push
-      uses : ad-m/github-push-action@master
+    - name : Push
+      uses : ad-m/github-push-action@main
       with :
         branch : "main"
         github_token : $
